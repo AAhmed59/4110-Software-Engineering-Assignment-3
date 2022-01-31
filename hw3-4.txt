@@ -1,0 +1,15 @@
+#Revision 1 START 1/31/2022
+##BEGIN Ashiq Ahmed here 1/31/2022
+
+#Expression a:
+print("Expression a:", 2**2**3 ) #Prints the output for expression a provided by the customer
+
+#Expression b:
+print("Expression b:", 2**(2**3)) #Prints the output for expression b provided by the customer
+
+#Expression c:
+print("Expression c:", (2**2)**3) #Prints the output for expression c provided by the customer
+
+#Revision 1 FINAL 1/31/2022
+##END Ashiq Ahmed here 1/31/2022
+#Omega Group / Manager: Ram Valud / Lead Tech: Michael Walker / Project greenwood321
