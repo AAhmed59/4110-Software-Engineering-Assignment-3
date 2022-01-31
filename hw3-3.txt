@@ -1,0 +1,12 @@
+#Revision 1 START 1/31/2022
+##BEGIN Ashiq Ahmed here 1/31/2022
+
+userInput = input("Please enter your input: ") #Prompts the user for their desired input to be ran through the program
+
+print(str(userInput)) #Prints the user's input as a string
+print(int(userInput)) #Prints the user's input as an int
+print(float(userInput)) #Prints the user's input as a float-point
+
+#Revision 1 FINAL 1/31/2022
+##END Ashiq Ahmed here 1/31/2022
+#Omega Group / Manager: Ram Valud / Lead Tech: Michael Walker / Project greenwood321
