@@ -1,0 +1,19 @@
+#Revision 1 START 1/31/2022
+##BEGIN Ashiq Ahmed here 1/31/2022
+
+#Group 1:
+my_var1 = 7.0 #Customer variable 1; contains a float-point variable
+my_var2 = 5 #Customer variable 2; contains an int variable
+print(my_var1 % my_var2) #Prints the remainder of the two variables to the customer
+
+#Group 2:
+x = 4 #Customer variable 3; contains an int variable
+y = 5 #Customer variable 4; contains an int variable
+print(x//y) #Prints the floor division of the two variables to the customer
+
+#Group 3:
+print(30-3**2+8//3**2*10) #Prints the output of the sequence of operations performed to the customer
+
+#Revision 1 END 1/31/2022
+##END Ashiq Ahmed here 1/31/2022
+#Omega Group / Manager: Ram Valud / Lead Tech: Michael Walker / Project greenwood321
