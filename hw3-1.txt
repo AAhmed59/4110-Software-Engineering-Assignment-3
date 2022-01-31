@@ -1,0 +1,14 @@
+#Revision 1 START 1/31/2022
+##BEGIN Ashiq Ahmed here 1/31/2022
+
+userNum = int(input("Please enter a number: ")) #asks user for their integer and stores it for use in the program
+finalNum = userNum + 2 #creates a new variable to perform the operations on the user integer
+finalNum *= 3 #multiplies the number by 3
+finalNum -= 6 #subtracts 6 from the number
+finalNum /= 3 #divides the number by 3
+
+print("The number you entered was", userNum, "and the final number is", finalNum) #prints the original number and the final number to the user
+
+#Revision 1 FINAL 1/31/2022
+##END Ashiq Ahmed here 1/31/2022
+#Omega Group / Manager: Ram Valud / Lead Tech: Michael Walker / Project greenwood321
