@@ -1,0 +1,42 @@
+#Revision 1 START 2/2/2022
+##BEGIN Ashiq Ahmed here 2/2/2022
+
+import random #Used to generate random characters for the password
+
+def gen_pass(): #Function to generate the random password
+    passwd = "" #Variable to hold the generated password; will be returned by the function
+
+    while True: #Provides a condition for the loop to run
+        for i in range(8): #Generates a password 8 characters long
+            info = random.randrange(60, 123, 1) #Generates a random number that will be converted into a character
+            passwd += chr(info) #Adds the generated character to the password
+        break #End after creating 1 password to prevent infinite loop
+    return passwd
+
+def string_checker(passwd): #Function to check if the password is acceptable
+    rockyou = open("/home/aahmed/Desktop/CSC 4110/wordlist.txt", "r") #Dictionary wordlist
+    while True: #Provides a condition for the loop to run
+        if passwd in rockyou:
+            found = True
+        else:
+            found = False
+        break #Break to prevent infinite loop
+    rockyou.close() #Close the file when it is not needed anymore
+    return found #Returns true or false depending on if the password is in the dictionary list
+
+##Main:
+passList = [] #Array to hold acceptable passwords
+for i in range(40):
+    password = gen_pass()
+    if string_checker(password) == False: #If the password is not found in the wordlist, it is acceptable
+        passList.append(password)
+    else:
+        password = gen_pass() #If the password is found in the list, it is not added to the acceptable list
+        i = i - 1 #To ensure we have 40 passwords, subtract 1 from the loop to try and add a different password again
+
+for j in range(len(passList)):
+    print(passList[j])
+
+#Revision 1 FINAL 2/3/2022
+##END Ashiq Ahmed here 2/3/2022
+#Omega Group / Manager: Ram Valud / Lead Tech: Michael Walker / Project greenwood321
