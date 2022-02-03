@@ -1,0 +1,56 @@
+#Revision 1 START 2/2/2022
+##BEGIN Ashiq Ahmed here 2/2/2022
+
+import random #Used to generate random values
+
+print("A Pirate's Life") #Name of the game
+
+#Let the user know what to do first
+input("Press RETURN to begin building the treasure chest.\n"
+      "Be sure to add GOLD! \n")
+
+#Building the chest
+chest = [] #Array to hold the user's inputs
+while "exit" not in chest: #Loops until the user is done inputting
+    #Ask user for the types of treasure in the game
+    loot = input("Enter items to place in the chest (Type exit to finish): ")
+    chest.append(loot) #Adds each item to the end of the array
+chest.pop(len(chest) - 1) #Removes "exit" from the chest
+
+#Let the user know what to do next
+input("\nPress RETURN to begin funding the bank.")
+
+#Funding the bank
+#Asks for starting balance
+balance = float(input("Enter the BEGINNING balance: "))
+
+#Let the user know what to do next
+while balance > 0: #The user can continue playing after 1 round
+    input("\nPress RETURN to place a bet.")
+
+#Betting
+    #Asks user for the amount they want to risk
+    bet = float(input(f"Current balance: {balance}  \n"
+                      "Place your wager: ")) 
+    
+#Let the user know what to do next
+    input("\nGet ready to spin the wheel! (Press RETURN to continue)\n")
+
+#Spinning the wheel
+    spin = random.choice(chest) #Randomly pick an item from the chest
+    print(f"You got {spin}!") #Let the user know what they got from the spin
+
+#Win or lose
+    if spin == "gold":
+        print("Congratulations! You win!\n") #Let the user know they won
+        balance += bet #Add the user's bet to their total balance
+    else:
+        print("Sorry, but it looks like you lost.\n") #Let the user know they lost
+        balance -= bet #Subtract the user's bet from their total balance
+
+#Let the user know what the final balance is when the game is over
+print("Final balance:", balance) 
+
+#Revision 1 FINAL 2/2/2022
+##END Ashiq Ahmed here 2/2/2022
+#Omega Group / Manager: Ram Valud / Lead Tech: Michael Walker / Project greenwood321
